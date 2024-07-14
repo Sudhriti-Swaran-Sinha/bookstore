@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for book in books %}
+            <div class="col-md-4 store-container">
+                
+                
+                    <img src="{{book.book_img.url}}" alt="">
+                    <p>Book Name: {{ book.book_name }}</p>
+                    <p>Author Name: {{ book.author_name }}</p>
+                    <p> Current Stock: {{book.book_stock }}</p>
+                    <p> Price: {{book.book_price }}</p>
+                    <button type="button" class="btn btn-outline-success add-to-cart" data-book-id="{{ book.id }}">Add to Cart</button>
+                
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

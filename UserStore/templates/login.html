@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="login-container">
+    <form method="post">
+        <h1>Login</h1>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+    </form>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary custom-signin-btn" type="button"><a href="{% url 'sign_in'%}">Want to sign In</a></button>
+    </div>
+</div>
+{% endblock %}

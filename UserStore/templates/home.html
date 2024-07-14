@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}This is my home{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Fiction Books</h2>
+                <p>Explore a wide range of fiction books that will take you to different worlds and experiences.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Autobiography Books</h2>
+                <p>Read inspiring stories and life journeys of remarkable people through our collection of autobiographies.</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Self-help Books</h2>
+                <p>Find books that provide guidance and advice to improve your personal and professional life.</p>
+            </div>
+        </div>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button"><a href="{% url 'sign_in'%}">Sign In For More</a></button>
+    </div>
+{% endblock %}
