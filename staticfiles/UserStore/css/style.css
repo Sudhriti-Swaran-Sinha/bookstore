@@ -1,0 +1,143 @@
+.row{
+    margin-top: 180px;
+}
+
+.col-md-4 {
+    padding: 42px;
+    border: 2px solid #405D72;
+}
+
+.btn-primary {
+    margin-top: 10%;
+}
+body{
+    background-color: #50B498;
+}
+.navbar{
+    background-color: #DEF9C4;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.login-container {
+    width: 50%; /* Adjust width as needed */
+    margin: 0 auto; /* This will center the container horizontally */
+    margin-top: 10%; /* Adjust top margin as needed */
+    text-align: center; /* Center align text and form elements */
+}
+
+
+h1, h1 {
+    font-size: 2.5rem;
+    margin-left: 30%;
+}
+form{
+    order: 2px solid;
+    width: 50%;
+    height: 250px;
+    padding: 80px;
+    padding-left: 147px;
+    margin-left: 11%;
+    margin-top: 11%;
+}
+.store-container {
+    width: 50%; /* Adjust width as needed */
+    margin: 0 auto; /* This will center the container horizontally */
+    margin-top: 10%; /* Adjust top margin as needed */
+    text-align: center; /* Center align text and form elements */
+    
+}
+.custom-signin-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50%;
+}
+
+.custom-signin-btn:hover {
+    background-color: #0056b3;
+}
+
+/* span{
+    display: block;
+}
+.sign-in-container{
+    border: 2px solid red;
+    display: flex;
+} */
+
+/*  */
+
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* 
+.sign-in-form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+} */
+
+.sign-in-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.sign-in-form button.sign-in-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sign-in-form button.sign-in-button:hover {
+    background-color: #0056b3;
+}
+
+.sign-in-form p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.sign-in-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.sign-in-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.sign-in-form{
+    width: 50%;
+    height: 250px;
+    padding: 28px;
+    padding-left: 147px;
+    margin-right: 20%;
+    margin-top: 4%;
+}
