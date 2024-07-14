@@ -28,7 +28,13 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG', default=False)
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['bookstore.onrender.com'])
+ALLOWED_HOSTS = [
+    'bookstore.onrender.com',  # Add your Render domain here
+    'localhost', 
+    '127.0.0.1',
+    'bookstore-jczg.onrender.com',  # Add the problematic host here
+]
+
 
 
 # Application definition
