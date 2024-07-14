@@ -3,9 +3,24 @@ services:
     name: django-app
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn BookStore.wsgi
+    startCommand: gunicorn BookStore.wsgi:application --bind 0.0.0.0:${PORT}
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: BookStore.settings
       - key: SECRET_KEY
         value: django-insecure-)o-@ov7fu9z5zw+_wg5t)*4-kw#woqe4l#l@1r3^9=jt&qbl(-
+      - key: PYTHON_VERSION
+        value: 3.10  # Adjust Python version as per your project's requirements
+    static_build_command: python manage.py collectstatic --noinput
+
+databases:
+  - name: sqlite-db
+    plan: sqlite
+
+health_checks:
+  - type: http
+    path: /
+    port: ${PORT}
+    method: GET
+    timeout_seconds: 10
+    check_interval_seconds: 60
