@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: django-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn BookStore.wsgi
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: BookStore.settings
+      - key: SECRET_KEY
+        value: django-insecure-)o-@ov7fu9z5zw+_wg5t)*4-kw#woqe4l#l@1r3^9=jt&qbl(-
